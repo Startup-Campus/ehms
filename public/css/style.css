@@ -1,0 +1,420 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    bottom: 0;
+    font-family: Montserrat, sans-serif;
+    color: #1d1d1d;
+    display: table;
+}
+
+body {
+    background: #fff url('../img/bg.jpg');
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover, a:visited {
+    color: inherit;
+}
+
+.default {
+    color: blue;
+    text-decoration: underline;
+}
+
+.default:hover, .default:visited {
+    color: blue;
+}
+
+.top-nav {
+    display: block;
+    width: 100%;
+    height: 100px;
+    background: darkblue;
+    position: relative;
+    right: 0;
+    top: 0;
+    box-shadow: 0px 0px 10px #1d1d1d;
+}
+
+.top-nav #logo {
+    display: inline-block;
+    margin-top: 12px;
+    margin-left: 15px;
+}
+
+#logo a img {
+    max-height: 80px;
+    max-width: calc(100vw - 190px);
+}
+
+.top-nav ul {
+    margin-top: 30px;
+    margin-right: 15px;
+    padding: 0;
+    float: right;
+}
+
+.top-nav ul li {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.top-nav ul li a {
+    color: #fff;
+    text-decoration: none;;
+    font-size: 18px;
+}
+
+.top-nav ul li a:hover {
+    color: #afafaf;
+    transition: 0.15s ease-in;
+}
+
+.btn-link {
+    color: #fff;
+    background: rgba(0, 0, 139, 0.9);
+    font-size: 24px;
+    border: none;
+    height: 40px;
+    cursor: pointer;
+}
+
+.btn-link:hover {
+    background: rgba(0, 0, 139, 1);
+    transition: 0.15s ease-in;
+}
+
+.btn-login {
+    border: 3px solid #fff;
+    padding: 5px;
+    width: 60px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn-login:hover {
+    background: #fff;
+    color: darkblue;
+    transition: 0.15s ease-in;
+}
+
+.top-nav ul .btn-login a {
+    color: inherit;
+}
+
+.top-nav ul .btn-login a:hover {
+    color: inherit;
+}
+
+.container-apply {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    top: 5%;
+    height: 400px;
+}
+
+.wrapper-apply, .wrapper-appointment {
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+    background: #fff;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    height: 100%;
+    padding-top: 5px;
+}
+
+.wrapper-apply h2, .wrapper-appointment h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: darkblue;
+}
+
+.wrapper-apply label {
+    text-align: left;
+}
+
+.wrapper-apply input {
+    width: 200px;
+    height: 16px;
+    border: 1px solid #cccccc;
+    background: #f5f5f5;
+    font-size: 12px;
+    position: relative;
+    margin: 5px auto;
+}
+
+.wrapper-apply textarea{
+    border: 1px solid #cccccc;
+    font-family: inherit;
+    background: #f5f5f5;
+    font-size: 12px;
+    position: relative;
+    margin: 5px auto;
+}
+
+.container-login {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    top: 20%;
+    height: 400px;
+}
+
+
+.wrapper-login {
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+    background: #fff;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    height: 100%;
+    padding-top: 30px;
+}
+
+
+.wrapper-apply {
+    height: 500px;
+    width: 60%;
+}
+
+.wrapper-appointment {
+    height: 400px;
+    width: 60%;
+    padding-top: 30px;
+}
+
+.wrapper-login input, .wrapper-appointment input {
+    width: 200px;
+    height: 26px;
+    border: 1px solid #cccccc;
+    background: #f5f5f5;
+    font-size: 18px;
+    position: relative;
+    margin: 20px auto;
+}
+
+input::placeholder {
+    color: #a1a1a1;
+    font-size: 14px;
+}
+
+.wrapper-login h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+    color: darkblue;
+}
+
+#submit {
+    width: 200px;
+    height: 42px;
+    border: 1px solid rgba(0, 0, 139, 0.9);
+    background: rgba(0, 0, 139, 0.9);
+    font-size: 20px;
+    margin: 20px 0 0 0;
+    color: #fff;
+    cursor: pointer;
+}
+
+#submit:hover {
+    border: 1px solid rgba(0, 0, 139, 1);
+    background: rgba(0, 0, 139, 1);
+    transition: 0.15s ease-in;
+}
+
+.options a:hover {
+    color: inherit;
+    transition: 0.15s ease-in;
+}
+
+.invalidFeedback {
+    color: #ff0000;
+}
+
+.wrapper-apply .invalidFeedback {
+    font-size: 8px;
+}
+
+#admin-header {
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+#admin-home, #view-app {
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#admin-home div {
+    display: inline-block;
+}
+
+#admin-home a.inherit {
+    color: inherit;
+}
+
+.card {
+    background: #fff;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+    text-transform: uppercase;
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+    margin: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.card .card-icon {
+    font-size: 40px;
+    line-height: 4;
+}
+
+.card p {
+    font-size: 24px;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    background: #eee;
+    transition: 0.15s ease-in;
+}
+
+.applications {
+    border-collapse: collapse;
+    margin: 20px;
+    width: 97%;
+    text-align: left;
+}
+
+.applications tr {
+    height: 50px;
+}
+
+.applications tr th, .applications tr td {
+    padding: 10px;
+}
+
+.applications tr td {
+    color: #1d1d1d;
+}
+
+.red {
+    background: rgba(255, 0, 0, 0.4);
+}
+
+.red:hover {
+    background: rgba(255, 0, 0, 0.2);
+    transition: 0.15s ease-in;
+}
+
+.green {
+    background: rgba(0, 255, 0, 0.4);
+}
+
+.green:hover {
+    background: rgba(0, 255, 0, 0.2);
+    transition: 0.15s ease-in;
+}
+
+.white {
+    background: rgba(235, 235, 235, 1);
+}
+
+.white:hover {
+    background: rgba(235, 235, 235, 0.2);
+    transition: 0.15s ease-in;
+}
+
+.grey {
+    background: rgba(161, 161, 161, 0.4);
+}
+
+.grey:hover {
+    background: rgba(161, 161, 161, 0.2);
+    transition: 0.15s ease-in;
+}
+
+.app-info {
+    height: 100%;
+}
+
+.app-info, .application {
+    width: 100%;
+}
+
+.app-info{
+    text-align: center;
+}
+
+.application {
+    text-align: left;
+    height: 80%;
+}
+
+.application tr {
+    height: 30px;
+}
+
+.app-info .btn-link {
+    margin-top: 20px;
+}
+
+.center {
+    text-align: center;
+}
+
+#viewrooms {
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#viewroom div {
+    display: inline-block;
+}
+
+
+.room-card p{
+    font-size: 18px;
+}
+
+.room-card a, .room-card span {
+    font-size: 12px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+    display: table-row;
+    height: 0;
+}

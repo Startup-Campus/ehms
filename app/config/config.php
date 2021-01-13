@@ -10,7 +10,7 @@ define('DB_NAME', 'ehms');
 define('APPROOT', dirname(dirname(__FILE__)));
 
 // URLROOT (dynamic links)
-define('URLROOT', 'http://localhost/ehms');
+define('URLROOT', 'https://okorite-ehms.herokuapp.com');
 
 // SITENAME
 define('SITENAME', 'Nile University E-Hostel Management System');

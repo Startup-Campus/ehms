@@ -141,7 +141,7 @@ class Students extends Controller {
             ];
         }
 
-        $this->view('students/index', $data);
+        $this->view('students/login', $data);
     }
 
     public function createStudentSession($student) {

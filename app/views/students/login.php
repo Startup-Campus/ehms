@@ -9,6 +9,7 @@
 <div class="container-login">
     <div class="wrapper-login">
         <h2>Login</h2>
+        <?php var_dump($_SESSION) ?>
         <form action="<?php echo URLROOT; ?>/students/login" method="POST">
             <input type="number" placeholder="Student ID" name="id">
             <span class="invalidFeedback">

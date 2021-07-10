@@ -11,7 +11,7 @@ define('DB_NAME', substr($cleardb_url["path"],1));
 define('APPROOT', dirname(dirname(__FILE__)));
 
 // URLROOT (dynamic links)
-define('URLROOT', 'http://localhost/ehms');
+define('URLROOT', 'https://enigmatic-gorge-98470.herokuapp.com/');
 
 // SITENAME
 define('SITENAME', 'Nile University E-Hostel Management System');

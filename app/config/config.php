@@ -1,16 +1,16 @@
 <?php 
 
 // Database parameters
-define('DB_HOST', 'us-cdbr-east-03.cleardb.com');
-define('DB_USER', 'b26a3381db0c45');
-define('DB_PASS', '2c227266');
-define('DB_NAME', 'heroku_f4c5865480229ec');
+define('DB_HOST', 'localhost');
+define('DB_USER', 'root');
+define('DB_PASS', '');
+define('DB_NAME', 'ehms');
 
 // APPROOT
 define('APPROOT', dirname(dirname(__FILE__)));
 
 // URLROOT (dynamic links)
-define('URLROOT', 'https://okorite-ehms.herokuapp.com');
+define('URLROOT', 'http://localhost/ehms');
 
 // SITENAME
 define('SITENAME', 'Nile University E-Hostel Management System');

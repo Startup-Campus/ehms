@@ -1,7 +1,7 @@
 <?php 
 
 // Database parameters
-$cleardb_url = parse_url(getenv('CLEARDB_DATABASE_URL'));
+$cleardb_url = parse_url(getenv('CLEARDB_BRONZE_URL'));
 define('DB_HOST', $cleardb_url['host']);
 define('DB_USER', $cleardb_url['user']);
 define('DB_PASS', $cleardb_url['pass']);

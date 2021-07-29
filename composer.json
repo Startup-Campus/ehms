@@ -1,6 +1,7 @@
 {
     "require": {
         "php": "^8.0.7",
-        "ext-mysqli": "*"
+        "ext-mysqli": "*",
+        "vlucas/phpdotenv": "^5.3"
     }
 }
